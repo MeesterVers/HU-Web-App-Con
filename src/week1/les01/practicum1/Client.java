@@ -1,4 +1,4 @@
-package week1.les01.simpleclientserver;
+package week1.les01.practicum1;
 import java.net.Socket;
 import java.io.OutputStream;
 

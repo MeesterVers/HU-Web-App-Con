@@ -1,4 +1,4 @@
-package week1.les01.practicum1;
+package week1.les01.practicum2;
 
 import java.net.ServerSocket;
 import java.net.Socket;
