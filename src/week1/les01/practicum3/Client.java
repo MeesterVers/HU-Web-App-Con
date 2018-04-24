@@ -9,7 +9,7 @@ class Client {
 	public static void main(String[] arg) throws Exception {
 		String message = "";
 		Scanner keyboard = new Scanner(System.in);
-		Socket s = new Socket("145.89.101.2", 4712);
+		Socket s = new Socket("localhost", 4711);
 		PrintWriter out = null;
 
 		while(true){
@@ -17,7 +17,7 @@ class Client {
 			message = keyboard.nextLine();
 
 			out = new PrintWriter( s.getOutputStream() );
-			out.write(message);
+			out.write(message + "\n");
 			out.flush();
 
 			if (message.equals("close chat")) {

@@ -3,17 +3,17 @@ package week1.les01.practicum2;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.io.InputStream;
+import java.util.Scanner;
 
 class Server {
   public static void main(String[] arg) throws Exception {
+    String message = "";
     ServerSocket ss = new ServerSocket(4711);
     Socket s = ss.accept();
-    InputStream is = s.getInputStream();
+    Scanner is = new Scanner(s.getInputStream());
 
-    int c = is.read();
-    while (c != -1) {
-      System.out.print((char) c);
-      c = is.read();
+    while (is.hasNextLine()) {
+     System.out.println(is.nextLine());
     } 
    
     s.close();

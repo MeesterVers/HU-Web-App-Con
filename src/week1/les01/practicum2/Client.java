@@ -10,6 +10,7 @@ class Client {
     
     out = new PrintWriter( s.getOutputStream() );
     out.write("This a web-page.");
+    out.write("This a web-page2.");
     out.flush();
     s.close();
   }
