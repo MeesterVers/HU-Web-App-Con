@@ -4,7 +4,7 @@ import java.io.OutputStream;
 
 class Client {
   public static void main(String[] arg) throws Exception {
-    Socket s = new Socket("145.89.103.142", 4711);
+    Socket s = new Socket("localhost", 4711);
     OutputStream os = s.getOutputStream();
     os.write("HOLENDRECHT\n".getBytes());
     s.close();

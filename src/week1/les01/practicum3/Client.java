@@ -17,7 +17,7 @@ class Client {
 			message = keyboard.nextLine();
 
 			out = new PrintWriter( s.getOutputStream() );
-			out.write(message + "\n");
+			out.write(message);
 			out.flush();
 
 			if (message.equals("close chat")) {
