@@ -1,4 +1,4 @@
-# Hogeschool Utrecht SIE JAVA Course
+# Hogeschool Utrecht SIE Web Application Construction Course
 
 This repo contains all the programs and models that a Software - information engineering student at
 **Hogeschool Utrecht** has to make in the first year.
